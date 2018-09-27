@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-items:center;
+    width: 100%;
+    height: auto;
+}
+.cardRow {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.col {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.main {
+    display: flex;
+    width: 100%;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    background-color: #006494;
+    min-width: 133px;
+}
+.locations {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.address {
+    text-shadow: none;
+    font-weight:bolder;
+    background-color: black; 
+    color: white;
+    min-width: 190px;
+    margin: 2%;
+    padding: 2%;
+    flex: 1;
+    border-radius: 10px;
+}
+.adjust {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+a {
+    text-decoration: none;
+    color: black; 
+}
+.link:hover {
+    background-color:white;
+    border-radius: 10px;
+}
+.frame{
+    background-color: #dadfea;
+    width: 70%;
+    margin: 20px auto;   
+}
+header {
+    background-color: #006494;
+}
+nav {
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.container {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.link {
+    flex: 1;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 1.3em;
+    text-decoration: none;
+    color: black; 
+    padding: 10px;
+    margin: 5px;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    background-color: #006494;
+    width: 100%;
+    padding: 20px;
+}
+@media only screen and (max-width: 600px){
+    .main {
+        flex-direction: column;
+    }
+    .locations {
+        width: 100%;
+    }
+    aside {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .frame {
+        width: 100%;
+        margin: 0;
+    }
+    .adjust {
+        display: none;
+    }
+    .cardRow {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
